@@ -37,7 +37,7 @@ public record struct ReisefradragRequest
 {
     public List<Arbeidsreise> arbeidsreiser { get; set; }
     public List<Besoeksreise> besoeksreiser { get; set; }
-    public int utgifterBomFergeEtc { get; set; }
+    public decimal utgifterBomFergeEtc { get; set; }
 }
 
 public record struct ReisefradragResponse

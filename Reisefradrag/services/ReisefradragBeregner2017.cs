@@ -5,18 +5,31 @@ namespace Reisefradrag.services
     public class ReisefradragBeregner2017 : IReisefradragBeregner
     {
         const decimal EgenAndel = 22000M;
+        const decimal ReiseUtgiftThreshold = 3400M;
 
-        public decimal BeregnFradrag(List<Arbeidsreise> arbeidsReiser, List<Besoeksreise> besoeksreiser, int utgifterBomFergeEtc)
+        public decimal BeregnFradrag(List<Arbeidsreise> arbeidsReiser, List<Besoeksreise> besoeksreiser, decimal utgifterBomFergeEtc)
         {
             var avstandsUtgifter = GetAvstandsUtgifter(arbeidsReiser, besoeksreiser);
+            var reiseUtgifter = GetReiseUtgifter(utgifterBomFergeEtc);
 
-            var fradrag = avstandsUtgifter - EgenAndel;
+            var utgifter = avstandsUtgifter + reiseUtgifter;
+            var fradrag = utgifter - EgenAndel;
             if(fradrag < 0)
             {
                 return 0;
             }
 
             return fradrag;
+        }
+
+        private decimal GetReiseUtgifter(decimal utgifterBomFergeEtc)
+        {
+            if(utgifterBomFergeEtc > ReiseUtgiftThreshold)
+            {
+                return utgifterBomFergeEtc;
+            }
+
+            return 0M;
         }
 
         private decimal GetAvstandsUtgifter(List<Arbeidsreise> arbeidsReiser, List<Besoeksreise> besoeksreiser)
