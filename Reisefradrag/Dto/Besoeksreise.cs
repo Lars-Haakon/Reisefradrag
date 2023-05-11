@@ -1,6 +1,6 @@
 ﻿namespace Reisefradrag.Dto
 {
-    public record Besoeksreise
+    public class Besoeksreise
     {
         public int km { get; set; }
         public int antall { get; set; }
