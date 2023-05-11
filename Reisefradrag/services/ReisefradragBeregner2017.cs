@@ -23,15 +23,13 @@ namespace Reisefradrag.services
         {
             var totalAvstand = GetTotalAvstand(arbeidsReiser, besoeksreiser);
 
-            decimal avstandsUtgifter = 0M;
+            decimal avstandsUtgifter = totalAvstand * 1.5M;
             if (totalAvstand > 50000)
             {
+                avstandsUtgifter = 50000 * 1.5M;
                 var avstandOver50K = totalAvstand - 50000;
                 avstandsUtgifter += avstandOver50K * 0.7M;
-                totalAvstand -= avstandOver50K;
             }
-
-            avstandsUtgifter += totalAvstand * 1.5M;
 
             return avstandsUtgifter;
         }
