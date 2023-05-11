@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reisefradrag", "Reisefradrag\Reisefradrag.csproj", "{4AA33F0E-0CF1-48CC-A190-652CA0751A2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reisefradrag", "Reisefradrag\Reisefradrag.csproj", "{4AA33F0E-0CF1-48CC-A190-652CA0751A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReisefradrag", "TestReisefradrag\TestReisefradrag.csproj", "{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4AA33F0E-0CF1-48CC-A190-652CA0751A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AA33F0E-0CF1-48CC-A190-652CA0751A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AA33F0E-0CF1-48CC-A190-652CA0751A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
