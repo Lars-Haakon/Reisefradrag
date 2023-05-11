@@ -44,7 +44,12 @@ namespace Reisefradrag.services
                 totalAvstand += arbReise.antall * arbReise.km;
             }
 
-            if(totalAvstand > 75000)
+            foreach (var besReise in besoeksreiser)
+            {
+                totalAvstand += besReise.antall * besReise.km;
+            }
+
+            if (totalAvstand > 75000)
             {
                 return 75000;
             }
