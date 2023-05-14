@@ -1,5 +1,8 @@
 # Reisefradrag
 
+Swagger-UI kan nås via følgende url: https://reisefradrag0523.azurewebsites.net/swagger/index.html
+Post-endepunktet nås på denne pathen: https://reisefradrag0523.azurewebsites.net/Reisefradrag
+
 Løsningen bruker .NETs Minimal Api for å eksponere et Post endepunkt. 
 Prosjektet var enkelt å sette opp og skulle vise seg å være enkelt og integrasjonsteste ved hjelp av WebApplicationFactory.
 
