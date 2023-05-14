@@ -14,12 +14,8 @@ namespace Reisefradrag.services
 
             var utgifter = avstandsUtgifter + reiseUtgifter;
             var fradrag = utgifter - EgenAndel;
-            if(fradrag < 0)
-            {
-                return 0;
-            }
 
-            return fradrag;
+            return Math.Max(fradrag, 0);
         }
 
         private decimal GetReiseUtgifter(decimal utgifterBomFergeEtc)
@@ -60,12 +56,7 @@ namespace Reisefradrag.services
                 totalAvstand += besReise.antall * besReise.km;
             }
 
-            if (totalAvstand > 75000)
-            {
-                return 75000;
-            }
-
-            return totalAvstand;
+            return Math.Min(totalAvstand, 75000);
         }
     }
 }
