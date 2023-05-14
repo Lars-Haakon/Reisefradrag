@@ -40,3 +40,6 @@ public record struct ReisefradragResponse
 {
     public decimal reisefradrag { get; set; }
 }
+
+public partial class Program
+{ }

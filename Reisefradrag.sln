@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reisefradrag", "Reisefradrag\Reisefradrag.csproj", "{4AA33F0E-0CF1-48CC-A190-652CA0751A2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReisefradrag", "TestReisefradrag\TestReisefradrag.csproj", "{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestReisefradrag.UnitTests", "TestReisefradrag\TestReisefradrag.UnitTests.csproj", "{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReisefradrag.IntegrationTests", "TestReisefradrag.IntegrationTests\TestReisefradrag.IntegrationTests.csproj", "{AAA5EDD7-F73B-43F3-A48F-4B337D117666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6293CF46-8B1C-4D81-B8E5-F96DCA162B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA5EDD7-F73B-43F3-A48F-4B337D117666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA5EDD7-F73B-43F3-A48F-4B337D117666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA5EDD7-F73B-43F3-A48F-4B337D117666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA5EDD7-F73B-43F3-A48F-4B337D117666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

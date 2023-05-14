@@ -2,7 +2,7 @@
 using Reisefradrag.Dto;
 using Reisefradrag.services;
 
-namespace TestReisefradrag
+namespace TestReisefradrag.UnitTests
 {
     [TestClass]
     public class TestReisefradragBesoeksreiser
